@@ -7,7 +7,7 @@ The problems we are solving is the integration between the old Java crud and the
 By using two completelly different systems we need to somehow transfer information between them. The easiest way to do it, is with parameters in the header of the pages you load from ours.
 
 ## How to implement it
-When you fire a basic login request to our login service
+When you fire a basic login request to our login service\
 https://johsports.alpha.gameaccount.com/api/login/jackOH/credentials
 
 you recieve some login information looking like this
@@ -51,13 +51,13 @@ you recieve some login information looking like this
 }
 `
 
-Once you have it, you must take couple of the parameters inside
+Once you have it, you must take couple of the parameters inside\
 `const playerGuid = res.data.player.playerGuid;`\
 `const token = res.data.token;`\
-`const sessionId = res.data.sessionId;`
-`const lastLoginDate = (new Date(res.data.lastLogin)).toISOString();`
+`const sessionId = res.data.sessionId;`\
+`const lastLoginDate = (new Date(res.data.lastLogin)).toISOString();`\
 
-and put it into the `<iframe>` we are loading like
+and put it into the `<iframe>` we are loading like\
 `'https://johsports.alpha.gameaccount.com/profile.shtml?playerGuid=' + playerGuid + '&token=' + token + '&sessionId=' + sessionId + '&lastLoginDate=' + parts[0] + 'T' + parts[1].substring(0,8)`
 
 By doing this, we transfer all the needed info between your system and our system and our system.

@@ -61,4 +61,3 @@ and put it into the `<iframe>` we are loading like\
 `'https://johsports.alpha.gameaccount.com/profile.shtml?playerGuid=' + playerGuid + '&token=' + token + '&sessionId=' + sessionId + '&lastLoginDate=' + parts[0] + 'T' + parts[1].substring(0,8)`
 
 By doing this, we transfer all the needed info between your system and our system and our system.
-ns.

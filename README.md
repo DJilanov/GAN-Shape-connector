@@ -52,8 +52,8 @@ you recieve some login information looking like this
 `
 
 Once you have it, you must take couple of the parameters inside
-`const playerGuid = res.data.player.playerGuid;`
-`const token = res.data.token;`
+`const playerGuid = res.data.player.playerGuid;`\
+`const token = res.data.token;`\
 `const sessionId = res.data.sessionId;`
 `const lastLoginDate = (new Date(res.data.lastLogin)).toISOString();`
 
